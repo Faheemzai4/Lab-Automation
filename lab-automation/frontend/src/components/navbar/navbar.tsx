@@ -33,14 +33,16 @@ export default function Navbar({ user, onLogout }: NavbarProps) {
     <nav className="bg-gray-900 text-white shadow-md fixed w-full z-50 top-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
-          <Link href="/dashboard" className="flex items-center">
-            <Image
-              src={Logo}
-              alt="Logo"
-              width={70}
-              height={70}
-              className="object-contain"
-            />
+           <Link href="/dashboard" className="flex items-center">
+            <div className="w-[60px] h-[60px] rounded-full overflow-hidden">
+              <Image
+                src={Logo}
+                alt="Logo"
+                width={70}
+                height={70}
+                className="object-cover w-full h-full"
+              />
+            </div>
           </Link>
 
           <div className="hidden md:flex items-center space-x-6">
